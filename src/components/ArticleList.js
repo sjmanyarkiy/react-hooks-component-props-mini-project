@@ -5,19 +5,19 @@ function ArticleList(props) {
 
     const { posts } = props
 
-    const article = posts.map((post) => {
-    return  <main>
-        <Article 
-    key={post.id} 
-    title ={post.title}
-    date={post.date}
-    preview={post.preview}
-    /> </main>
+    const article = posts.map((post, index) => {
+    return  <Article key={index}
+          title ={post.title}
+          date={post.date}
+          preview={post.preview}/> 
+     
   })
 
   return ( 
-    {article}
-   
+   <main>
+      {article}
+    </main>
+  
   )
 }
 

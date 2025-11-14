@@ -1,9 +1,7 @@
 import React from 'react'
 import Article from './Article'
 
-function ArticleList({ props = [] }) {
-
-    const { posts } = props
+function ArticleList({ posts = [] }) {
 
     const article = posts.map((post) => {
     return  <Article key={post.id}

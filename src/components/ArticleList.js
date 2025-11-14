@@ -2,8 +2,9 @@ import React from 'react'
 import Article from './Article'
 
 function ArticleList(props) {
-    
+
     const { posts } = props
+    
     const article = posts.map((post) => {
     return  <Article 
     key={post.id} 
@@ -11,9 +12,9 @@ function ArticleList(props) {
     date={post.date}
     preview={post.preview}
     />
-    })
+  })
 
-  return (
+  return ( 
     <div>
       {article}
     </div>

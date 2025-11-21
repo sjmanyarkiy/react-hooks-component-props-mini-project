@@ -7,7 +7,7 @@ function ArticleList({ posts = [] }) {
     return  <Article key={post.id}
           title ={post.title}
           date={post.date}
-          preview={post.preview}/> 
+          preview={post.preview} /> 
      
   })
 
@@ -15,7 +15,6 @@ function ArticleList({ posts = [] }) {
    <main>
       {article}
     </main>
-  
   )
 }
 

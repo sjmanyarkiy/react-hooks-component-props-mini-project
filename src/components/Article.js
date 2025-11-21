@@ -1,7 +1,6 @@
 import React from 'react'
 
 function Article({ title, date="January 1, 1970", preview }) {
-  
   return (
     <article>
       <h3>{title}</h3>
@@ -12,10 +11,3 @@ function Article({ title, date="January 1, 1970", preview }) {
 }
 
 export default Article
-
-// { title, date="January 1, 1970", preview }
-
-// key={post.id} 
-//           title ={post.title}
-//           date={post.date}
-//           preview={post.preview}
